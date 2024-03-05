@@ -3,14 +3,14 @@
 
 
 const inputNomeCognome = document.getElementById("nome-cognome")
-console.log("nome e cognome", inputNomeCognome)
+//console.log("nome e cognome", inputNomeCognome)
 
 const InputButton = document.getElementById("buttoninvio")
-console.log(InputButton);
+//console.log(InputButton);
 
 //età passeggero
 const InputFasciaEta = document.getElementById("sconto")//string
-console.log("fascia eta", InputFasciaEta);
+//console.log("fascia eta", InputFasciaEta);
 
 
 
@@ -32,16 +32,18 @@ console.log("fascia eta", InputFasciaEta);
 // console.log(prezzosconto);
 
 
+const InputKm = document.getElementById("km")
+
+    //console.log("chilometri passeggero", InputKm, "km");
 
 
 InputButton.addEventListener("click", function () {
-    const InputKm = document.getElementById("km")
 
-    console.log("chilometri passeggero", InputKm, "km");
 
-    const prezzo = (InputKm * 0.21); //numb
+    
+    
 
-    console.log("prezzo standard", prezzo, "euro");
+
 
     const inputNomeCognomeValue = inputNomeCognome.value;
     const kmpass = InputKm.value;
@@ -49,6 +51,9 @@ InputButton.addEventListener("click", function () {
     console.log(InputSconto);
     console.log(inputNomeCognomeValue, kmpass);
 
+    const prezzo = kmpass * 0.21; //numb
+
+    console.log("prezzo standard", prezzo, "euro");
 
 
 
